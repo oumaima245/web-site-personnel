@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	font-family:'Poppins', sans-serif;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior:smooth ;
+}
+@media (max-width:300px)
+:root {
+    --mainNavMobileHeight:50px;}
+header{
+	background-color:rgba(28, 32, 34, 0.30);
+width: 100%;
+position: fixed;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 100px ;
+word-wrap: break-word;
+padding-left: -1px;
+}
+header .name{
+	text-decoration: none;
+	color: aliceblue;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1em;
+	padding:1px 1px 1px 10px;
+	position: relative;
+	right:80px;
+}
+.menu a{
+	color: 	aliceblue;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.8em;
+	padding: 1px 50px 1px 3px; 
+}
+.menu a:hover{
+	color: rgb(125, 173, 160);
+	font-size: 1.1em;
+}
+span{
+	color: rgb(163, 223, 207);
+}
+/*end header*/
+section {
+	padding: 250px 350px;
+
+}
+ .Home{
+	width:100%;
+	min-width: 100vh;
+	display: flex;
+	align-items: center;
+	background-image:url('images/img_projet.jpg') ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+}
+.Hello ::after{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+	opacity: .12;
+	z-index: -7;
+}
+.Hello {
+	color: aliceblue;
+	font-size: 2.7em;
+	font-weight: 500;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+position:relative;
+display:block;
+justify-content:center ;
+word-wrap: break-word;
+margin-left:-300px;
+}
+ .Hello i {
+
+	margin: 0;
+	padding: 0;
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: rgb(255, 250, 250);
+  }
+  
+   .Hello i {
+	position: relative;
+	text-transform: uppercase;
+	overflow: hidden;
+	background: linear-gradient(90deg, aliceblue, aliceblue,rgb(138, 224, 201));
+	background-repeat: no-repeat;
+	background: linear-gradient(90deg, rgb(250, 250, 250));
+	background-size: 80%;
+	animation: animate 4s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+	0% {
+	  background-position: -300%;
+	}
+	100% {
+	  background-position: 300%;
+	}
+}
+  
+	  
+.Hello p{
+	font-size: 0.3em;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: -25px;
+	margin-bottom: 30px;
+	margin-left: -2.9em;
+	line-height: 0.1px;
+}
+.Home .CV{
+	color: rgba(44, 50, 53, 0.8);
+	background-color: rgb(163, 223, 207);
+	text-decoration: none;
+	font-size: 0.5em;
+	font-weight: 350;
+	display:inline-block;
+	padding: 0.32444em 0.48888em;
+	letter-spacing: 1px;
+	border-radius:10px ;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	position: relative;
+	top: -10px;
+	left:70px;
+	transition:0.8s ease;
+}
+.Home .CV:hover{
+	background-color:rgb(125, 173, 160) ;
+	transform: scale(1.1);
+}
+/*end HOME*/
+.title{
+display: flex;
+justify-content: center;
+color: rgb(168, 245, 219);
+font-size: 2.2em;
+font-weight: 820;
+padding-bottom: 32px;
+}
+.title{
+	text-decoration: overline underline;
+text-decoration-color: rgb(140, 165, 165);
+}
+.title span{
+	color: rgb(140, 165, 165);
+}
+.content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	font-size: -2px;
+	transition: 0.2s ease;
+}
+.card{width :80em;
+	background-color:rgb(168, 245, 219);
+	box-shadow: 0 5px 25px rgba(1 1 1 /50%);
+border-radius: 30px;
+padding: 80px;
+margin:35px;
+}
+.content :hover{
+	transform: scale(1.1);
+}
+.icon{
+	color: rgb(225, 232, 238);
+	text-align: center;
+	font-size: 2.2em;
+	margin: 10px;
+	margin-top: -15px;
+}
+.info{
+line-height: 3em;
+}
+.info h3{
+font-size: 1.1em;
+
+}
+.info p{
+	color: aliceblue;
+	font-weight: 200;
+	margin: 2px;
+	line-height: 2em;
+	overflow: hidden;
+}
+/*end project tag*/
+.footer{
+	background-color:rgb(0, 18, 43) ;
+color: rgb(180, 248, 226);
+padding: 2em;
+display: flex;
+justify-content: space-around;
+}
+.footer span{
+	color: aliceblue;
+}
+.footer p{
+	font-size: 1.3em;
+	font-weight: 600;
+}
+.social img{
+	padding: 10px 12px 0 0;
+	width: 35px;
+	height: 35px;
+	justify-content: space-between;
+text-align: right;
+}
+footer a :hover{transform: scale(1.5);}
+/*end footer*/
+/***************media*/
+@media (max-width:1023px)
+{
+	header{
+	padding	:7px 3px;
+	}
+h1,p{
+	font-size: 0.4em;
+	padding: 0;
+	
+}
+header .name{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.7em;
+	padding:1px 1px 1px 10px;
+	position: relative;
+	right:-5px;}
+	.content{
+		flex-direction: column;
+		align-items: center;
+	}
+	.card{
+		width :30em;
+	padding: 25px 12px 5px 0;
+	}
+	.info {
+		text-align: center;
+		font-size: 1.1em;
+	}
+	.info :hover{
+		transform: scale(1.2);
+	}
+	hr{
+		width: 0;
+}
+@media  (max-width:641px) {
+	body{
+		font-size: 8px;
+	
+	}
+	header{
+		padding	:4px 5px;
+		}
+}
